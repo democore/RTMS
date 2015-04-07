@@ -73,7 +73,7 @@ function initMap(mapID)
 				source: new ol.source.TileImage({
 					projection: proj,
 					tileUrlFunction: function (coordinate, pixelRatio, projection) {
-						return '/' + curMapFolder + '/' + coordinate[0] + '/' + coordinate[1] +
+						return 'http://justdev.de/' + curMapFolder + '/' + coordinate[0] + '/' + coordinate[1] +
 							'/' + (coordinate[2]) + '.png';
 					},
 					tileGrid: new ol.tilegrid.Zoomify({
